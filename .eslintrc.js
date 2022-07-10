@@ -5,18 +5,18 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'plugin:prettier/recommended'
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
-  parser: 'vue-eslint-parser',
+  parser: "vue-eslint-parser",
   parserOptions: {
-    ecmaVersion: 'latest',
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    parser: "@typescript-eslint/parser",
+    sourceType: "module"
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ["vue", "@typescript-eslint"],
   // rules copied from https://github.com/jekip/naive-ui-admin/blob/main/.eslintrc.js
   rules: {
     // 'vue/script-setup-uses-vars': 'error',
@@ -56,24 +56,17 @@ module.exports = {
     // 'vue/singleline-html-element-content-newline': 'off',
     // 'vue/attribute-hyphenation': 'off',
     // 'vue/require-default-prop': 'off',
-    'vue/html-self-closing': [
-      'error',
+    "vue/html-self-closing": [
+      "error",
       {
         html: {
-          void: 'always',
-          normal: 'never',
-          component: 'always'
+          void: "always",
+          normal: "never",
+          component: "always"
         },
-        svg: 'always',
-        math: 'always'
+        svg: "always",
+        math: "always"
       }
     ]
-  },
-  'prettier/ptettier': [
-    'error',
-    {
-      singleQuote: true,
-      parser: 'flow'
-    }
-  ]
-}
+  }
+};
