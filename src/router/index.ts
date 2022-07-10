@@ -14,6 +14,7 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: "demo/page1",
+        name: "demo-page1",
         component: () => import("../pages/demo/page-one.vue"),
         meta: {
           title: "demo1"
@@ -21,6 +22,7 @@ const routes: RouteRecordRaw[] = [
       },
       {
         path: "demo/page2",
+        name: "demo-page2",
         component: () => import("../pages/demo/page-two.vue"),
         meta: {
           title: "demo2"
