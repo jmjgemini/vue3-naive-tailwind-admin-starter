@@ -1,11 +1,13 @@
 import type { RouteRecordRaw } from "vue-router";
 import { createRouter, createWebHashHistory } from "vue-router";
 import MainLayout from "../layouts/main-layout.vue";
+import NotFound from "../pages/system/not-found.vue";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: MainLayout,
+    redirect: "/demo/page1",
     meta: {
       title: "root"
     },
@@ -23,6 +25,11 @@ const routes: RouteRecordRaw[] = [
         meta: {
           title: "demo2"
         }
+      },
+      // 404 页面
+      {
+        path: "/:path(.*)*",
+        component: NotFound
       }
     ]
   }
