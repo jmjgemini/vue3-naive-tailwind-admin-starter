@@ -16,7 +16,6 @@ function changeTheme() {
 <template>
   <n-config-provider :theme="theme" :locale="zhCN" :date-locale="dateZhCN">
     <n-button type="primary" @click="changeTheme">ChangeTheme</n-button>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <n-global-style />
   </n-config-provider>
 </template>
